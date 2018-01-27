@@ -1,0 +1,19 @@
+<resources>
+
+	<!-- Sizes -->
+	<dimen name="medium_text">20sp</dimen>
+
+	<!-- Heights -->
+	<dimen name="activity_bar_height">60dp</dimen>
+
+	<!-- Spacings -->
+	<dimen name="small_spacing">5dp</dimen>
+	<dimen name="not_quite_small_spacing">10dp</dimen>
+	<dimen name="somewhat_small_spacing">20dp</dimen>
+
+	<dimen name="medium_spacing">50dp</dimen>
+	<dimen name="medium_plus_spacing">60dp</dimen>
+
+	<dimen name="large_spacing">200dp</dimen>
+
+</resources>

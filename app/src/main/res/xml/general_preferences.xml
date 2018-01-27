@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/settings_general_header"
+		android:key="@string/cat_general_key"
+		>
+		<!-- Interval between background changes -->
+		<ListPreference
+			android:defaultValue="30"
+			android:entries="@array/interval_names"
+			android:entryValues="@array/interval_values"
+			android:key="@string/list_interval_key"
+			android:negativeButtonText="@null"
+			android:positiveButtonText="@null"
+			android:title="@string/interval_list_title"
+			/>
+
+		<!-- Show images in random order (alt in sequence) -->
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_random_key"
+			android:title="@string/random_cb_title"
+			android:summary="@string/random_cb_summary"
+			/>
+
+		<!-- Show preview of WallpaperLists in Set management screen -->
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_preview_key"
+			android:title="@string/preview_cb_title"
+			android:summary="@string/preview_cb_summary"
+			/>
+
+		<!-- Let user select app theme -->
+		<ListPreference
+			android:defaultValue="AppDarkTheme"
+			android:entries="@array/theme_names"
+			android:entryValues="@array/theme_values"
+			android:key="@string/list_theme_key"
+			android:negativeButtonText="@null"
+			android:positiveButtonText="@null"
+			android:title="@string/theme_title" />
+
+	</PreferenceCategory>
+
+
+
+</PreferenceScreen>

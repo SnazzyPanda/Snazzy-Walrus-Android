@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:id="@+id/imageListFragment"
+			 tools:context="com.snazzy.android.snazzywalrus.ui.ImageListFragment">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="@dimen/activity_bar_height"
+		>
+
+		<ListView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/imageListView"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="@dimen/activity_bar_height"/>
+
+		<fragment
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			class="com.snazzy.android.snazzywalrus.ui.BottomMenuFragment"
+			tools:layout="@layout/fragment_bottom_menu"
+			android:layout_alignParentBottom="true"
+			android:id="@+id/imageListBottomMenuFragment"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/overlayBackground"
+		android:id="@+id/methodChooserOverlayLayout"
+		android:visibility="gone">
+
+		<RadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:padding="@dimen/not_quite_small_spacing"
+			android:visibility="visible"
+			android:id="@+id/chooserMethodRadioGroup"
+			android:background="?attr/colorPrimary">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/add_using_prompt_text"
+				android:id="@+id/textView"
+				android:textSize="@dimen/medium_text"/>
+
+			<!--
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/chooseSingleRadioButton"
+				android:text="@string/add_using_single_text"
+				android:textSize="@dimen/medium_text"
+				android:layout_marginTop="@dimen/small_spacing"/>
+			-->
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/add_using_multi_text"
+				android:id="@+id/chooseMultiRadioButton"
+				android:textSize="@dimen/medium_text"
+				android:layout_marginTop="@dimen/small_spacing"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/add_using_folder_text"
+				android:id="@+id/chooseFolderRadioButton"
+				android:textSize="@dimen/medium_text"
+				android:layout_marginTop="@dimen/small_spacing"/>
+		</RadioGroup>
+	</RelativeLayout>
+</FrameLayout>

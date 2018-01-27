@@ -1,0 +1,164 @@
+<resources>
+	<string name="app_name">Snazzy Walrus</string>
+	<string name="app_tagline">An automatic wallpaper changer</string>
+
+	<string name="local_image_list_file_with_id">wallpaperList%1$d.json</string>
+	<string name="local_id_list_file">wallpaperSetsBrief.json</string>
+	<string name="wallpaper_list_preview_image_file">list%1$d.png</string>
+	<string name="wallpaper_list_preview_image_dir">/preview</string>
+	<string name="compress_format">PNG</string>
+	<!-- Other -->
+	<string name="dialog_bonus_dev_text">Brought to you by SnazzyPanda.</string>
+
+	<!-- Toasts -->
+	<string name="toast_changer_start_no_files">The wallpaper changer has started, but you do not have any images set for the wallpaper changer to use. Please note that the wallpaper will not be changed until you have added some.</string>
+	<string name="toast_changer_start">Starting Snazzy Walrus.</string>
+	<string name="toast_duplicate_chosen_not_allowed">This image is already on the list.</string>
+	<string name="toast_changer_stop">Stopping Snazzy Walrus</string>
+
+	<!-- Remove/clear image list prompts -->
+	<string name="remove_image_prompt">Do you want to remove this image from the list?</string>
+	<string name="remove_image_title">Remove image?</string>
+	<string name="remove_image_confirm">Remove image</string>
+	<string name="remove_image_deny">Keep image</string>
+
+	<string name="remove_multi_image_prompt">Do you want to remove the selected images from the list?</string>
+	<string name="remove_multi_image_title">Remove images?</string>
+	<string name="remove_multi_image_confirm">Remove images</string>
+	<string name="remove_multi_image_deny">Keep images</string>
+
+	<string name="remove_all_image_prompt">Do you want to remove all images from the list?</string>
+	<string name="remove_all_image_title">Remove All Images?</string>
+	<string name="remove_all_image_confirm">Remove all images</string>
+	<string name="remove_all_image_deny">Keep all images</string>
+
+	<!-- Add image using prompt -->
+	<string name="add_using_prompt_text">How would you like to add files?</string>
+	<string name="add_using_single_text">Single Image Chooser</string>
+	<string name="add_using_multi_text">Multiple Image Chooser</string>
+	<string name="add_using_folder_text">Folder Chooser</string>
+
+	<!-- Set dialogs -->
+	<string name="remove_all_sets_prompt">This action cannot be undone!</string>
+	<string name="remove_all_sets_title">Delete all sets?</string>
+	<string name="remove_all_sets_confirm">Delete</string>
+	<string name="remove_all_sets_deny">Cancel</string>
+	<string name="add_set_prompt">Give this set a name:</string>
+	<string name="add_set_title">Create new set</string>
+	<string name="add_set_confirm">Create</string>
+	<string name="add_set_deny">Cancel</string>
+
+	<string name="rename_selected_sets_prompt">Rename selected sets</string>
+	<string name="rename_selected_sets_title">Rename</string>
+	<string name="rename_selected_sets_confirm">Rename</string>
+	<string name="rename_selected_sets_deny">Cancel</string>
+	<string name="rename_selected_sets_hint">My awesome wallpaper set</string>
+
+	<string name="default_selected_sets_prompt">Restore default settings of selected sets?</string>
+	<string name="default_selected_sets_title">Default</string>
+	<string name="default_selected_sets_confirm">Default</string>
+	<string name="default_selected_sets_deny">Cancel</string>
+
+	<string name="delete_selected_sets_prompt">Are you sure you want to delete these sets? This action cannot be undone!</string>
+	<string name="delete_selected_sets_title">Delete</string>
+	<string name="delete_selected_sets_confirm">Delete</string>
+	<string name="delete_selected_sets_deny">Cancel</string>
+
+	<!-- Restore defaults prompt -->
+	<string name="restore_defaults_on_selected_prompt">Are you sure you want to restore the items to the default behavior (following global settings)</string>
+	<string name="restore_defaults_on_selected_title">Restore default behavior?</string>
+	<string name="restore_defaults_on_selected_confirm">Restore defaults</string>
+	<string name="restore_defaults_on_selected_deny">Cancel</string>
+
+	<string name="restore_defaults_on_all_prompt">Are you sure you want to restore the default individual settings for all items in this list</string>
+	<string name="restore_defaults_on_all_title">Restore default behavior?</string>
+	<string name="restore_defaults_on_all_confirm">Restore defaults on all items</string>
+	<string name="restore_defaults_on_all_deny">Cancel</string>
+
+	<!-- Permission text -->
+	<string name="permission_reason_read_external">In order to get images stored on your device, we need you to grant us Read External Storage permissions.</string>
+	<string name="permission_reason_positive_button">Continue</string>
+	<string name="permission_reason_negative_button">Deny</string>
+
+	<!-- Notification text -->
+	<string name="permission_fail_notification_title">Failed changing wallpaper</string>
+	<string name="permission_fail_notification_short_text">Need permissions to run: Read External Storage</string>
+	<string name="permission_fail_notification_text">Failed changing wallpaper: please give permission to read external storage or stop the app to stop seeing this message.</string>
+
+	<!-- Action bar -->
+	<string name="action_top_start">Start changer</string>
+	<string name="action_top_stop">Stop changer</string>
+	<string name="action_top_force_next">Change wallpaper</string>
+	<string name="action_top_manage_sets">Manage sets</string>
+	<string name="action_top_list_defaults">Restore individual defaults</string>
+	<string name="action_top_list_defaults_condensed">Restore defaults</string>
+
+	<string name="action_bottom_delete">Clear list</string>
+	<string name="action_bottom_add">Add images</string>
+	<string name="registered_images_text">Images registered: %1$d</string>
+	<string name="registered_sets_text">Sets registered: %1$d</string>
+
+	<!-- Context Menu -->
+	<string name="context_settings">Settings</string>
+	<string name="context_defaults">Restore defaults</string>
+	<string name="context_delete">Delete</string>
+	<string name="set_context_rename">Rename</string>
+
+	<!-- Settings -->
+	<string name="title_activity_settings">Settings</string>
+	<string name="settings_general_header">General settings</string>
+	<string name="settings_global_image_header">Global image alteration settings</string>
+	<string name="settings_advanced_header">Advanced settings</string>
+	<string name="settings_single_image_header">Image alteration settings</string>
+	<string name="settings_set_header">Set settings</string>
+
+	<string name="interval_list_title">Rotation interval</string>
+	<!-- interval list summary handled programmatically -->
+	<string name="random_cb_title">Randomize images</string>
+	<string name="random_cb_summary">Choose next image randomly or sequentially from list. [Default: On]</string>
+	<string name="theme_title">Theme</string>
+	<string name="use_only_global_title">Global only</string>
+	<string name="use_only_global_summary">Use global settings instead of per image settings [Default: Off]</string>
+	<!-- theme list summary handled programmatically -->
+	<string name="resize_cb_title">Resize images</string>
+	<string name="resize_cb_summary">Resize the images to better fit the screen. If chosen to only resize by width OR height (not both), images will keep the same ratio to prevent distortions. [Default: On]</string>
+	<string name="resize_height_checkbox_title">Resize by height</string>
+	<string name="resize_height_checkbox_summary">Resize images to device height. (Recommended for phones) [Default: On]</string>
+	<string name="resize_width_checkbox_title">Resize by width</string>
+	<string name="resize_width_checkbox_summary">Resize images to device width. (Recommended for tablets) [Default: Off]</string>
+	<string name="crop_cb_title">Crop to fit screen</string>
+	<string name="crop_cb_summary">Crop images to device screen size after resize. [Default: On]</string>
+	<string name="crop_location_list_title">Crop from:</string>
+	<!-- crop location list summary handled programmatically -->
+	<string name="duplicate_cb_title">Allow duplicate files</string>
+	<string name="duplicate_cb_summary">Allow adding files multiple times to the list. [Default: Off]</string>
+	<string name="subdir_cb_title">Include sub-folders</string>
+	<string name="subdir_cb_summary">Add images from all sub-folders of selected folder (when using folder chooser). [Default: Off]</string>
+
+	<string name="preview_cb_title">Display preview</string>
+	<string name="preview_cb_summary">Display preview of sets in set management window [Default: On]</string>
+
+	<!-- Settings Keys -->
+	<string name="cat_general_key">pref_key_category_general</string>
+	<string name="cat_image_key">pref_key_category_image</string>
+	<string name="cat_advanced_key">pref_key_category_advanced</string>
+	<string name="cat_set_key">pref_key_category_set</string>
+
+	<string name="list_interval_key">list_interval</string>
+	<string name="cb_random_key">cb_random_image</string>
+	<string name="list_theme_key">list_theme</string>
+	<string name="cb_resize_key">cb_resize</string>
+	<string name="cb_resize_height_key">cb_resize_height</string>
+	<string name="cb_resize_width_key">cb_resize_width</string>
+	<string name="cb_crop_key">cb_crop</string>
+	<string name="list_crop_location_key">list_crop_location</string>
+	<string name="cb_use_global_key">cb_use_global</string>
+	<string name="cb_duplicate_files_key">cb_duplicate_files</string>
+	<string name="cb_use_subdir_key">cb_use_subdirs</string>
+
+	<string name="cb_preview_key">cb_show_preview</string>
+
+
+	<string name="interval_notice_text">The active set will need to be restarted to apply interval changes.</string>
+
+</resources>

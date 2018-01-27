@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/settings_global_image_header"
+		android:key="@string/cat_image_key"
+		>
+		<!-- Whether or not to resize used images -->
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_resize_key"
+			android:title="@string/resize_cb_title"
+			android:summary="@string/resize_cb_summary"
+			/>
+
+		<!-- Resize images by height -->
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_resize_height_key"
+			android:title="@string/resize_height_checkbox_title"
+			android:summary="@string/resize_height_checkbox_summary"
+			android:dependency="@string/cb_resize_key"
+			/>
+
+		<!-- Resize images by width -->
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="@string/cb_resize_width_key"
+			android:title="@string/resize_width_checkbox_title"
+			android:summary="@string/resize_width_checkbox_summary"
+			android:dependency="@string/cb_resize_key"
+			/>
+
+		<!-- Whether or not to crop image (after any resizing) -->
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_crop_key"
+			android:title="@string/crop_cb_title"
+			android:summary="@string/crop_cb_summary"
+			/>
+
+		<!-- The list of locations to choose where to crop from -->
+		<ListPreference
+			android:defaultValue="0"
+			android:entries="@array/crop_location_names"
+			android:entryValues="@array/crop_location_values"
+			android:key="@string/list_crop_location_key"
+			android:negativeButtonText="@null"
+			android:positiveButtonText="@null"
+			android:title="@string/crop_location_list_title"
+			android:dependency="@string/cb_crop_key"
+			/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/settings_advanced_header"
+		android:key="@string/cat_advanced_key"
+		>
+
+		<!-- Whether or not to force global settings (instead of per image settings) -->
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="@string/cb_use_global_key"
+			android:title="@string/use_only_global_title"
+			android:summary="@string/use_only_global_summary"
+			/>
+
+		<!-- Whether or not to allow duplicate files to be added -->
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="@string/cb_duplicate_files_key"
+			android:title="@string/duplicate_cb_title"
+			android:summary="@string/duplicate_cb_summary"
+			/>
+
+		<!-- Include all subdirectories of added folder (assuming I get a system that allows adding multiple/folders) -->
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="@string/cb_use_subdir_key"
+			android:title="@string/subdir_cb_title"
+			android:summary="@string/subdir_cb_summary"
+			/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

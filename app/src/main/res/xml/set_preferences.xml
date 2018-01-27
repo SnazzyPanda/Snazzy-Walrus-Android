@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/settings_set_header"
+		android:key="@string/cat_set_key" >
+
+		<!-- Interval between background changes -->
+		<ListPreference
+			android:defaultValue="30"
+			android:entries="@array/interval_names"
+			android:entryValues="@array/interval_values"
+			android:key="@string/list_interval_key"
+			android:negativeButtonText="@null"
+			android:positiveButtonText="@null"
+			android:title="@string/interval_list_title"
+			/>
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_random_key"
+			android:title="@string/random_cb_title"
+			android:summary="@string/random_cb_summary"
+			/>
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:key="@string/cb_preview_key"
+			android:title="@string/preview_cb_title"
+			android:summary="@string/preview_cb_summary"
+			/>
+	</PreferenceCategory>
+</PreferenceScreen>

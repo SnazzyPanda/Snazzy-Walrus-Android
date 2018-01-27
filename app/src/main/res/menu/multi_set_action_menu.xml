@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/multi_set_context_settings"
+		  android:title="@string/context_settings"
+		  android:icon="@android:drawable/ic_menu_preferences"
+		  android:orderInCategory="5" />
+
+	<item android:id="@+id/multi_set_context_rename"
+		  android:title="@string/set_context_rename"
+		  android:icon="@android:drawable/ic_menu_edit"
+		  android:orderInCategory="10" />
+
+	<item android:id="@+id/multi_set_context_restore_defaults"
+		  android:title="@string/context_defaults"
+		  android:icon="@android:drawable/ic_menu_revert"
+		  android:orderInCategory="20" />
+
+	<item android:id="@+id/multi_set_context_delete"
+		  android:title="@string/context_delete"
+		  android:icon="@android:drawable/ic_menu_delete"
+		  android:orderInCategory="50" />
+</menu>

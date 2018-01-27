@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:tools="http://schemas.android.com/tools"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 tools:context=".ui.SetManagementFragment"
+			 android:id="@+id/setListFragment" >
+
+	<GridView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/wallSetGridView"
+		android:layout_marginTop="@dimen/activity_bar_height"
+		android:layout_marginBottom="@dimen/activity_bar_height"
+		android:numColumns="auto_fit"
+		android:horizontalSpacing="@dimen/small_spacing"
+		android:verticalSpacing="@dimen/small_spacing"/>
+
+	<fragment
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		class="com.snazzy.android.snazzywalrus.ui.BottomMenuFragment"
+		tools:layout="@layout/fragment_bottom_menu"
+		android:layout_gravity="bottom"
+		android:id="@+id/setListBottomMenuFragment"/>
+
+</FrameLayout>

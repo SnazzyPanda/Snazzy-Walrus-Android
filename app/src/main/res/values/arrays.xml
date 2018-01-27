@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Themes preference -->
+	<string-array name="theme_names">
+		<item>Dark Theme</item>
+		<item>Light Theme</item>
+	</string-array>
+
+	<string-array name="theme_values">
+		<item>AppDarkTheme</item>
+		<item>AppLightTheme</item>
+	</string-array>
+
+	<!-- Interval preference -->
+	<string-array name="interval_names">
+		<item>5 minutes</item>
+		<item>10 minutes</item>
+		<item>15 minutes</item>
+		<item>30 minutes</item>
+		<item>1 hour</item>
+		<item>2 hours</item>
+		<item>6 hours</item>
+		<item>12 hours</item>
+		<item>24 hours</item>
+	</string-array>
+
+	<string-array name="interval_values">
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>120</item>
+		<item>360</item>
+		<item>720</item>
+		<item>1440</item>
+	</string-array>
+
+	<!-- Crop location preference -->
+	<string-array name="crop_location_names">
+		<item>Random location</item>
+		<item>Left side</item>
+		<item>Right side</item>
+		<item>Center of image</item>
+	</string-array>
+
+	<string-array name="crop_location_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+</resources>
